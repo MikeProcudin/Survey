@@ -12,6 +12,15 @@
     color:grey!important;
 }
 
+.text-wheat__nav{
+    color:grey!important;
+}
+.text-wheat__nav:hover {
+    color:rgb(230, 193, 124)!important
+}
+
+
+
 
 body {
     background:#303030;

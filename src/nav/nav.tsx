@@ -18,9 +18,6 @@ class Nav extends React.Component<Props, State>  {
     }
 
     render() {
-        let currUrl = new URL(window.document.URL).pathname;
-        let disabled = currUrl === '/' ? 'disabled' : '';
-
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
                 <span className="navbar-brand text-wheat">
@@ -28,7 +25,7 @@ class Nav extends React.Component<Props, State>  {
                 </span>
                 <ul className="navbar-nav mr-auto offset-1">
                     <li className="nav-item">
-                        <Link className={`nav-link text-wheat ${disabled}`} to="/"> | All Surveys | </Link>
+                        <Link className={`nav-link text-wheat__nav`} to="/"> | All Surveys | </Link>
                     </li>
                 </ul>
             </nav>
