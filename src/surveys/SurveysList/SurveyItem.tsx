@@ -14,7 +14,7 @@ const SurveyItem = (props: Props) => (
                     </button>
                     </div>
                     <div className="col">
-                        <button type="button" onClick={() => props.history.push({ pathname: `/${props.survey.surveyId}details`, state: { survey: props.survey } })}
+                        <button type="button" onClick={() => props.history.push({ pathname: `/${props.survey.surveyId}/details`, state: { survey: props.survey } })}
                             className="btn border border-secondary bg-dark text-wheat text-nowrap" >Go To Details
                     </button>
                     </div>
