@@ -34,7 +34,6 @@ class Nav extends React.Component<Props, State>  {
 }
 
 const mapState = (state: any) => {
-    console.log(state);
     return {
         surveysList: state.surveys.surveysList
     }
