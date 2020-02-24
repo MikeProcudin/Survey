@@ -15,7 +15,6 @@ const SurveyList = (props: Props) => (
         <div className="col-12">
             <h3 className="text-wheat mt-5 mb-5 col-12 text-center">Survey List</h3>
         </div>
-        {console.log(props.surveys)}
         {props.surveys.list.map((survey: Survey, key: number) => <SurveyItem {...{ survey, key }} />)}
     </div>
 )

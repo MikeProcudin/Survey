@@ -32,9 +32,7 @@ class SurveyChart extends React.Component<Props, State>  {
 
     plugins = () => ([{
         id: 333,
-        beforeInit: (chart: Chart) => {
-            console.log(chart);
-        },
+        beforeInit: (chart: Chart) => {},
         beforeDraw: (chart: Chart) => {
             var ctx: CanvasRenderingContext2D | null = chart.ctx;  // getting instance
             ctx!.fillStyle = '#343a40'; // setting background color
@@ -69,7 +67,6 @@ class SurveyChart extends React.Component<Props, State>  {
         scales: {
             ticks: {
                 callback: function (value: any, index: any, values: any) {
-                    console.log(value)
                     return null;
                 }
             },
